@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000000000000000;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.loader_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+    .lds-hourglass:after {
+        content: " ";
+        display: block;
+        border-radius: 50%;
+        width: 0;
+        height: 0;
+        margin: 8px;
+        box-sizing: border-box;
+        border: 32px solid #ffcc01;
+        border-color: #ffcc01 transparent #fff transparent;
+        animation: lds-hourglass 1.8s infinite;
+    }
+
+@keyframes lds-hourglass {
+    0% {
+        transform: rotate(0);
+        animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    50% {
+        transform: rotate(900deg);
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    100% {
+        transform: rotate(1800deg);
+    }
+}
+.recipes_first {
+    background: url('Images/food_bg.jpg') 10% 3% no-repeat;
+    background-size: cover;
+    color: white;
+    height: 65%;
+}
+
+.recipes_first .head {
+    font-size: 90px;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.main,
+.main2 {
+    padding: 6% 13%;
+}
+
+.main .content {
+    text-align: center;
+}
+
+.main .content h2,
+.main2 .content2 h2 {
+    color: #e7272d;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    padding: 10px 0px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.main .content h1,
+.main2 .content2 h1 {
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 10px 0px;
+    font-size: 45px;
+    width: 60%;
+    margin: auto;
+}
+
+.main .content .menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+    margin: 20px 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main .content .menu .items {
+    border: 2px dashed #e7272d;
+    padding: 5px 30px;
+    display: flex;
+    background-color: #efdfdf;
+    text-align: justify;
+    box-shadow: 1px 1px 5px rgb(106, 106, 106);
+}
+
+.main .content .menu .items:hover {
+    background-color: white;
+}
+
+.main .content .menu .items img {
+    border: 2px solid white;
+    width: 25%;
+}
+
+.main .content .menu .items section {
+    margin: 0px 25px;
+}
+
+.main .content .menu .items section h3 {
+    font-size: 22px;
+}
+
+.main .content .menu .items section h3 span {
+    color: #e7272d;
+}
+
+.main .content .menu .items section p {
+    font-size: 18px;
+    padding: 5px 0px;
+}
+
+.main .content .menu .items section button {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #e7272d;
+    color: white;
+    border-style: none;
+}
+
+.main .content .menu .items section button:hover {
+    background-color: black;
+}
+
+/* Main Dishes*/
+
+.main2 {
+    background-color: rgb(244, 240, 240);
+}
+
+.main2 .content2 .menu2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+
+.main2 .content2 .menu2 .mitems {
+    height: 4.6in;
+    background-color: #efdfdf;
+    box-shadow: 2px 2px 7px rgb(106, 106, 106);
+}
+
+.main2 .content2 .menu2 .mitems:hover {
+    background-color: white;
+}
+
+.main2 .content2 .menu2 .mitems img {
+    width: 100%;
+    height: 50%;
+}
+
+.main2 .content2 .menu2 .mitems section {
+    margin-top: 30px;
+    padding: 0px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.main2 .content2 .menu2 .mitems section h3 {
+    font-size: 22px;
+}
+
+.main2 .content2 .menu2 .mitems section h3 span {
+    color: #e7272d;
+}
+
+.main2 .content2 .menu2 .mitems section p {
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.main2 .content2 .menu2 .mitems section button {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 20px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #e7272d;
+    color: white;
+    border-style: none;
+}
+
+.main2 .content2 .menu2 .mitems section button:hover {
+    background-color: black;
+}
